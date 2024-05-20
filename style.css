@@ -32,6 +32,7 @@ body {
 
 .img-container img {
     border-radius: 10px;
+    width: 100%;
 }
 
 .img-container, .content-container {
@@ -93,4 +94,46 @@ body {
 
 .author-name:hover {
     transform: translateY(5px);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution a {
+    color: var(--pure-white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 327px;
+    }
+
+    .category {
+        width: fit-content;
+    }
+
+    .category p {
+        font-size: 12px;
+    }
+
+    .publish-date {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .author-container {
+        width: fit-content;
+    }
+    
 }
